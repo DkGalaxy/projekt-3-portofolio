@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;900&family=Merriweather:wght@300&display=swap');
+
+.header{
+    background-color: rgb(30 29 32);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    color: #474646;
+    display: flex;
+    justify-content: flex-start;
+
+    
+    
+}
+
+.logo{
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 19px;
+    font-weight: 900;
+   
+}
+
+
+.nav{
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.635);
+    overflow: hidden;
+    right: 0;
+    text-align: left;
+    margin-top: 82px;
+    font-weight: 900;
+}
+
+.menu a{
+    display: block;
+    padding: 30px;
+    color: white;
+}
+
+.menu a:hover{
+    background-color: rgba(128, 128, 128, 0.223);
+}
+
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+.hamb{
+    cursor: pointer;
+    padding: 40px 20px;
+    margin-left: auto;
+ 
+}
+
+.hamb-line {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+  
+
+}
+.hamb-line::before,
+.hamb-line::after{
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+}
+
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+body {
+    margin: 0;
+    height: 100%;
+
+}
+
+
+
+.divbox {
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+}
+
+.hero-container {
+    height: 800px;
+    background: url('../Images/billede-yes3.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 700px;
+    padding-top: 138px; 
+    height: calc(100vh - 700px);
+}
+
+
+.hero-tekst{
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 65px;
+color: rgb(255, 255, 255);
+justify-content: center;
+font-weight: 900;
+}
+
+#hero-container-bottom {
+    height: 900px;
+    background: url('../Images/om-mig-billede3.jpg') center/cover no-repeat;
+    background-position: center bottom; 
+    
+
+}
+.grid-container2 {
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+    padding-top: 138px; 
+    
+}
+
+.menu-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ul{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    padding-top: 31px;
+    color: white;
+    list-style:none ;
+}
+
+.li-titel-tekst{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 43px;
+    color: #fff;
+    list-style: none;
+ text-align: center;
+ font-weight: 900;
+
+}
+.overskrifttekst{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 85px;
+}
+
+
+.billede{
+    margin-top: 200px;
+    margin-left:200px;
+}
+
+.image-container {
+    display: flex;
+    margin-top: 200px;
+}
+.image-container img {
+    width: 450px; /* Adjust the width as needed */
+    height: 500px; /* Maintain aspect ratio */
+    margin-left: 25px;
+
+  
+    
+}
+.image-container img:nth-child(2) {
+    height: 600px; /* Adjust the height of the second image */
+    margin-top: -100px; /* Adjust the negative margin to move the second image upward */
+}
+
+
+
